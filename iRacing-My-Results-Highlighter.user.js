@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       http://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.18.04.17.01
+// @version       1.18.04.17.02
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -11,7 +11,6 @@
 // ==/UserScript==
 
 // the script overwrites the addExportButton function (which is called at the end of the populateResults function
-
 function addExportButton(parent, ssId, ssNum) {
   // so first we do the things that addExportButton normally does...
 	var csv_div=parent.appendChild(element("div",{},{position:"absolute",top:"1px",right:"21px"}));
