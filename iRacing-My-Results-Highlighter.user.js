@@ -6,7 +6,7 @@
 // @version       18.04.17
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
-// @license       MIT; https://raw.githubusercontent.com/xthexder/wide-github/master/LICENSE
+// @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
 // @homepageURL   https://github.com/Fuzzwah/iRacing-My-Results-Highlighter
 // ==/UserScript==
 
