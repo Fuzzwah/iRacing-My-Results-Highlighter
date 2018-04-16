@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       http://members.iracing.com/membersite/member/EventResult.do*
-// @version       18.04.17
+// @version       1.18.04.17.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
