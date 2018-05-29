@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       http://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.18.04.18.03
+// @version       1.18.05.30.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -37,11 +37,11 @@ function addExportButton(parent, ssId, ssNum) {
     // check if the id of the row contains our custid
     if (elmRow.id.indexOf(""+custid+"") !== -1) {
       // make it yellow!
-      elmRow.style.background = "yellow";
+      elmRow.style.background = "#fff3b3";
       // if this was a team race....
       if (teamRace == true) {
 	// also highlight the last team row we saw
-        prevTeam.style.background = "yellow";
+        prevTeam.style.background = "#fff3b3";
       }
     }
   }  
