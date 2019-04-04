@@ -2,7 +2,7 @@
 // @namespace     http://www.fuzzwahracing.com/p/results-highlighter.html
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
-// @include       http://members.iracing.com/membersite/member/EventResult.do*
+// @include       *://members.iracing.com/membersite/member/EventResult.do*
 // @version       1.18.06.20.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
