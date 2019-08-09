@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.19.04.05.02
+// @version       1.19.08.10.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -44,31 +44,30 @@ function addExportButton(parent, ssId, ssNum) {
         ["Driver 5", "driver5_custid_here", "#A05EFF"],
         ["Driver 6", "driver6_custid_here", "#FFB459"]
     ];
-    if (custid != "") {
-        // set up some variables to handle team race results
-        var teamRace = false;
-        var prevTeam = null;
-        // spin through each row in the table
-        var trs = document.getElementsByTagName('tr');
-        for (var i = 0; i < trs.length; i++) {
-            var elmRow = trs[i];
-            // if any of these rows have the class "team_parent_row", results are from a team race
-            if (elmRow.classList.contains("team_parent_row")) {
-                teamRace = true;
-                // hold onto the last team we saw
-                prevTeam = elmRow;
-            }
-            // check if the id of the row contains our drivers
-            var index
-            for (index = 0; index < drivers.length; ++index) {
-                if (elmRow.id.indexOf(drivers[index][1]) !== -1) {
-                    // set the color
-                    elmRow.style.background = drivers[index][2];
-                    // if this was a team race....
-                    if (teamRace == true) {
-                        // also highlight the last team row we saw
-                        prevTeam.style.background = drivers[index][2];
-                    }
+
+    // set up some variables to handle team race results
+    var teamRace = false;
+    var prevTeam = null;
+    // spin through each row in the table
+    var trs = document.getElementsByTagName('tr');
+    for (var i = 0; i < trs.length; i++) {
+        var elmRow = trs[i];
+        // if any of these rows have the class "team_parent_row", results are from a team race
+        if (elmRow.classList.contains("team_parent_row")) {
+            teamRace = true;
+            // hold onto the last team we saw
+            prevTeam = elmRow;
+        }
+        // check if the id of the row contains against the custids our drivers
+        var index
+        for (index = 0; index < drivers.length; ++index) {
+            if (elmRow.id.indexOf(drivers[index][1]) !== -1) {
+                // set the color
+                elmRow.style.background = drivers[index][2];
+                // if this was a team race....
+                if (teamRace == true) {
+                    // also highlight the last team row we saw
+                    prevTeam.style.background = drivers[index][2];
                 }
             }
         }
