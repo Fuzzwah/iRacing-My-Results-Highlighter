@@ -34,7 +34,8 @@ function addExportButton(parent, ssId, ssNum) {
     // this grabs the custid from the URL
     var custid = location.search.split('custid=').splice(1).join('').split('&')[0];
 
-    // you can configure the array below to make the script highlight other drivers too, in the format: ["name", "custid", "html_color_code"]
+    // you can configure the array below to make the script highlight other drivers too
+    // edit the examples below in the format: ["name", "custid", "html_color_code"]
     var drivers = [
         ["", ""+custid+"", "#FFF3B3"],
         ["Driver 1", "driver1_custid_here", "#FFF3B3"],
@@ -42,7 +43,7 @@ function addExportButton(parent, ssId, ssNum) {
         ["Driver 3", "driver3_custid_here", "#C1FFAF"],
         ["Driver 4", "driver4_custid_here", "#B2ECFF"],
         ["Driver 5", "driver5_custid_here", "#A05EFF"],
-        ["Driver 6", "driver6_custid_here", "#FFB459"]
+        ["Driver 6", "driver6_custid_here", "#FFB459"],
     ];
 
     // set up some variables to handle team race results
