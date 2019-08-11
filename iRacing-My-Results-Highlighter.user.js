@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.19.08.10.01
+// @version       1.19.08.11.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -38,12 +38,12 @@ function addExportButton(parent, ssId, ssNum) {
     // edit the examples below in the format: ["name", "custid", "html_color_code"]
     var drivers = [
         ["", ""+custid+"", "#FFF3B3"],
-        ["Driver 1", "driver1_custid_here", "#FFF3B3"],
-        ["Driver 2", "driver2_custid_here", "#FFB1CC"],
-        ["Driver 3", "driver3_custid_here", "#C1FFAF"],
-        ["Driver 4", "driver4_custid_here", "#B2ECFF"],
-        ["Driver 5", "driver5_custid_here", "#A05EFF"],
-        ["Driver 6", "driver6_custid_here", "#FFB459"],
+        ["You", "your_custid_here", "#FFF3B3"],
+        ["Driver1", "driver1_custid_here", "#FFB1CC"],
+        ["Driver2", "driver2_custid_here", "#C1FFAF"],
+        ["Driver3", "driver3_custid_here", "#B2ECFF"],
+        ["Driver4", "driver4_custid_here", "#CEC1E7"],
+        ["Driver5", "driver5_custid_here", "#FFB459"],
     ];
 
     // set up some variables to handle team race results
