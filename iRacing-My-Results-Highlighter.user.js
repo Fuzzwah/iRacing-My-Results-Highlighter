@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.19.08.11.01
+// @version       1.19.11.22.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -33,6 +33,9 @@ function addExportButton(parent, ssId, ssNum) {
     // and then we do the things needed to highlight the driver's row in the tables:
     // this grabs the custid from the URL
     var custid = location.search.split('custid=').splice(1).join('').split('&')[0];
+    if (custid == "") {
+        custid = "none";
+    }
 
     // you can configure the array below to make the script highlight other drivers too
     // edit the examples below in the format: ["name", "custid", "html_color_code"]
@@ -62,7 +65,8 @@ function addExportButton(parent, ssId, ssNum) {
         // check if the id of the row contains against the custids our drivers
         var index
         for (index = 0; index < drivers.length; ++index) {
-            if (elmRow.id.indexOf(drivers[index][1]) !== -1) {
+            var re = new RegExp("race_row_[0-9]+_"+drivers[index][1]+"_[a-z0-9]+");
+            if (re.test(elmRow.id)) {
                 // set the color
                 elmRow.style.background = drivers[index][2];
                 // if this was a team race....
