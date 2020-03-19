@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.19.11.22.01
+// @version       1.20.03.19.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -19,6 +19,32 @@ function addExportButton(parent, ssId, ssNum) {
         top: "1px",
         right: "21px"
     }));
+    var getContrast = function (hexcolor){
+
+        // If a leading # is provided, remove it
+        if (hexcolor.slice(0, 1) === '#') {
+            hexcolor = hexcolor.slice(1);
+        }
+
+        // If a three-character hexcode, make six-character
+        if (hexcolor.length === 3) {
+            hexcolor = hexcolor.split('').map(function (hex) {
+                return hex + hex;
+            }).join('');
+        }
+
+        // Convert to RGB value
+        var r = parseInt(hexcolor.substr(0,2),16);
+        var g = parseInt(hexcolor.substr(2,2),16);
+        var b = parseInt(hexcolor.substr(4,2),16);
+
+        // Get YIQ ratio
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+
+        // Check contrast
+        return (yiq >= 128) ? '#333' : '#eee';
+
+    };
     var csvimg_link = csv_div.appendChild(element("a", {
         href: contextpath + "/member/GetEventResultsAsCSV?subsessionid=" + ssId + "&simsesnum=" + ssNum + "&includeSummary=1",
         className: "outputcsv_label"
@@ -33,15 +59,11 @@ function addExportButton(parent, ssId, ssNum) {
     // and then we do the things needed to highlight the driver's row in the tables:
     // this grabs the custid from the URL
     var custid = location.search.split('custid=').splice(1).join('').split('&')[0];
-    if (custid == "") {
-        custid = "none";
-    }
 
     // you can configure the array below to make the script highlight other drivers too
     // edit the examples below in the format: ["name", "custid", "html_color_code"]
     var drivers = [
-        ["", ""+custid+"", "#FFF3B3"],
-        ["You", "your_custid_here", "#FFF3B3"],
+        ["Your Name", "your_custid_here", "#FFF3B3"],
         ["Driver1", "driver1_custid_here", "#FFB1CC"],
         ["Driver2", "driver2_custid_here", "#C1FFAF"],
         ["Driver3", "driver3_custid_here", "#B2ECFF"],
@@ -63,16 +85,28 @@ function addExportButton(parent, ssId, ssNum) {
             prevTeam = elmRow;
         }
         // check if the id of the row contains against the custids our drivers
-        var index
-        for (index = 0; index < drivers.length; ++index) {
-            var re = new RegExp("race_row_[0-9]+_"+drivers[index][1]+"_[a-z0-9]+");
-            if (re.test(elmRow.id)) {
+        var j
+        var k
+        var l
+        for (l = 0; l < drivers.length; ++l) {
+            if (elmRow.id.indexOf(drivers[l][1]) !== -1) {
                 // set the color
-                elmRow.style.background = drivers[index][2];
+                elmRow.style.background = drivers[l][2];
+                for (j = 0; j < elmRow.cells.length; j++) {
+                    elmRow.cells[j].style.color = getContrast(drivers[l][2]);
+                    var link = elmRow.cells[j].getElementsByClassName("stats_table_link");
+                    if (link.length > 0) {
+                        link[0].style.color = getContrast(drivers[l][2]);
+                    }
+                }
+
                 // if this was a team race....
                 if (teamRace == true) {
                     // also highlight the last team row we saw
-                    prevTeam.style.background = drivers[index][2];
+                    prevTeam.style.background = drivers[l][2];
+                    for (k = 0; k < prevTeam.cells.length; k++) {
+                        prevTeam.cells[k].style.color = getContrast(drivers[l][2]);
+                    }
                 }
             }
         }
