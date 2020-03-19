@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your entries in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       1.20.03.19.01
+// @version       1.20.03.19.02
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -63,6 +63,7 @@ function addExportButton(parent, ssId, ssNum) {
     // you can configure the array below to make the script highlight other drivers too
     // edit the examples below in the format: ["name", "custid", "html_color_code"]
     var drivers = [
+        ["", ""+custid+"", "#FFF3B3"],
         ["Your Name", "your_custid_here", "#FFF3B3"],
         ["Driver1", "driver1_custid_here", "#FFB1CC"],
         ["Driver2", "driver2_custid_here", "#C1FFAF"],
