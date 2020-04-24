@@ -1,16 +1,8 @@
 # iRacing-My-Results-Highlighter
-Highlights the rows of your entries in the iRacing event results table.
+Highlights the rows of your, and optionally other selected drivers, in the iRacing event results table.
 
-You can edit the drivers array in the script to also have it highlight other drivers; look for this section:
+To configure which drivers are highlighted, and the colors used for each, right click on the TamperMonkey icon in your browser and click on the "Set drivers to highlight" option. This will bring up a form where you can configure up to 10 drivers to highlight. You'll need to enter their name, custid, and the hex code of the color you want to highlight their rows with. (Note that the name only used for reference so doesn't need to match their iRacing name).
 
-```
-    var drivers = [
-        ["", ""+custid+"", "#FFF3B3"],
-        ["You", "your_custid_here", "#FFF3B3"],
-        ["Driver1", "driver1_custid_here", "#FFB1CC"],
-        ["Driver2", "driver2_custid_here", "#C1FFAF"],
-        ["Driver3", "driver3_custid_here", "#B2ECFF"],
-        ["Driver4", "driver4_custid_here", "#CEC1E7"],
-        ["Driver5", "driver5_custid_here", "#FFB459"]
-    ];
-```
+You can find a driver's custid by looking at the URL of their driver profile. IE: https://members.iracing.com/membersite/member/CareerStats.do?custid=<this number>
+
+I use the following site to choose colors: https://www.color-hex.com
