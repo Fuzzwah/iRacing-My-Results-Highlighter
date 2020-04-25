@@ -230,17 +230,6 @@ GM_configStruct.prototype = {
           if (Object.prototype.toString.call(settings.section) !== '[object Array]')
             settings.section = [settings.section];
 
-          if (settings.section[0])
-            section.appendChild(create('div', {
-              className: 'section_header center',
-              id: configId + '_section_header_' + secNum
-            }, settings.section[0]));
-
-          if (settings.section[1])
-            section.appendChild(create('p', {
-              className: 'section_desc center',
-              id: configId + '_section_desc_' + secNum
-            }, settings.section[1]));
           ++secNum;
         }
 
@@ -302,10 +291,10 @@ GM_configStruct.prototype = {
     }
 
     // Change this in the onOpen callback using this.frame.setAttribute('style', '')
-    var defaultStyle = 'bottom: auto; border: 1px solid #000; display: none; height: 75%;'
-      + ' left: 0; margin: 0; max-height: 95%; max-width: 95%; opacity: 0;'
-      + ' overflow: auto; padding: 0; position: fixed; right: auto; top: 0;'
-      + ' width: 75%; z-index: 9999;';
+    var defaultStyle = 'bottom: auto; border: 1px solid #000; display: none; height: 450px;'
+      + ' left: auto; margin: 0; max-height: 95%; max-width: 95%; opacity: 0;'
+      + ' overflow: auto; padding: 0; position: fixed; right: 5%; top: 10px;'
+      + ' width: 420px; z-index: 9999;';
 
     // Either use the element passed to init() or create an iframe
     if (this.frame) {
@@ -597,7 +586,7 @@ GM_configField.prototype = {
       }
     }
 
-    var retNode = create('div', { className: 'config_var',
+    var retNode = create('div', { className: field.class || 'config_var',
           id: configId + '_' + id + '_var',
           title: field.title || '' }),
         firstProp;

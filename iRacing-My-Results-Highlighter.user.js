@@ -33,194 +33,256 @@ function actionHighlight(jNode) {
         'fields': {
             'driver1_name': {
                 'section': [GM_config.create('Driver 1'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver1_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver1_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver2_name': {
                 'section': [GM_config.create('Driver 2'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver2_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver2_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver3_name': {
                 'section': [GM_config.create('Driver 3'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver3_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver3_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver4_name': {
                 'section': [GM_config.create('Driver 4'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver4_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver4_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver5_name': {
                 'section': [GM_config.create('Driver 5'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver5_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver5_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver6_name': {
                 'section': [GM_config.create('Driver 6'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver6_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver6_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver7_name': {
                 'section': [GM_config.create('Driver 7'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver7_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver7_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver8_name': {
                 'section': [GM_config.create('Driver 8'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver8_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver8_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver9_name': {
                 'section': [GM_config.create('Driver 9'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver9_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver9_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
             'driver10_name': {
                 'section': [GM_config.create('Driver 10'), ''],
-                'label': GM_config.create('Name'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': 'John Smith'
+                'default':'John Smith',
+                'class': 'name',
             },
             'driver10_custid': {
-                'label': GM_config.create('CustID'),
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
             },
             'driver10_color': {
-                'label': GM_config.create('Color'),
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3'
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
             },
+            'driver11_name': {
+                'section': [GM_config.create('Driver 11'), ''],
+                'labelPos': 'left',
+                'type': 'text',
+                'default':'John Smith',
+                'class': 'name',
+            },
+            'driver11_custid': {
+                'labelPos': 'left',
+                'type': 'int',
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
+            },
+            'driver11_color': {
+                'labelPos': 'left',
+                'type': 'text',
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
+            },
+            'driver12_name': {
+                'section': [GM_config.create('Driver 12'), ''],
+                'labelPos': 'left',
+                'type': 'text',
+                'default':'John Smith',
+                'class': 'name',
+            },
+            'driver12_custid': {
+                'labelPos': 'left',
+                'type': 'int',
+                'default': 11111,
+                'class': 'custid',
+                'size': 12
+            },
+            'driver12_color': {
+                'labelPos': 'left',
+                'type': 'text',
+                'default': '#FFF3B3',
+                'class': 'color',
+                'size': 8
+            },            
         }
     });
 
