@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your, and optionally other selected drivers, in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       2.20.04.25.03
+// @version       2.20.04.25.05
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -33,20 +33,23 @@ function actionHighlight(jNode) {
         'fields': {
             'driver1_name': {
                 'section': [GM_config.create('Driver 1'), ''],
-                'labelPos': 'left',
+                'labelPos': 'above',
+                'label': 'Names',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver1_custid': {
-                'labelPos': 'left',
+                'labelPos': 'above',
+                'label': 'Custids',
                 'type': 'int',
                 'default': 11111,
                 'class': 'custid',
                 'size': 12
             },
             'driver1_color': {
-                'labelPos': 'left',
+                'labelPos': 'above',
+                'label': 'Colors',
                 'type': 'text',
                 'default': '#FFF3B3',
                 'class': 'color',
@@ -56,7 +59,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 2'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver2_custid': {
@@ -77,7 +80,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 3'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver3_custid': {
@@ -98,7 +101,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 4'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver4_custid': {
@@ -119,7 +122,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 5'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver5_custid': {
@@ -140,7 +143,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 6'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver6_custid': {
@@ -161,7 +164,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 7'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver7_custid': {
@@ -182,7 +185,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 8'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver8_custid': {
@@ -203,7 +206,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 9'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver9_custid': {
@@ -224,7 +227,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 10'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver10_custid': {
@@ -245,7 +248,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 11'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver11_custid': {
@@ -266,7 +269,7 @@ function actionHighlight(jNode) {
                 'section': [GM_config.create('Driver 12'), ''],
                 'labelPos': 'left',
                 'type': 'text',
-                'default':'John Smith',
+                'default': '',
                 'class': 'name',
             },
             'driver12_custid': {
@@ -282,8 +285,9 @@ function actionHighlight(jNode) {
                 'default': '#FFF3B3',
                 'class': 'color',
                 'size': 8
-            },            
-        }
+            },
+        },
+        'css': '.name {float: left; width: 50%; margin-top: 5px;} .custid {float: left; width: 30%; margin-top: 5px;} .color {float: left; width: 20%; margin-top: 5px;}'
     });
 
     var stored_drivers = GM_config.read();
