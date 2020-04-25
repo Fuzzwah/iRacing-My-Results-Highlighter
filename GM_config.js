@@ -575,9 +575,9 @@ GM_configField.prototype = {
       if (!beforeEl) beforeEl = parentNode.firstChild;
       switch (pos) {
         case 'above':
-          console.log("above");
           parentNode.insertBefore(labelEl, beforeEl);
           parentNode.insertBefore(create('br', {}), beforeEl);
+          break;
         case 'right': case 'below':
           if (pos == 'below')
             parentNode.appendChild(create('br', {}));
