@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your, and optionally other selected drivers, in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       2.20.04.25.05
+// @version       2.20.04.26.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -38,6 +38,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver1_custid': {
                 'labelPos': 'above',
