@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your, and optionally other selected drivers, in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       2.20.05.11.01
+// @version       2.20.05.11.02
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -62,6 +62,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver2_custid': {
                 'labelPos': 'left',
@@ -83,6 +84,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver3_custid': {
                 'labelPos': 'left',
@@ -104,6 +106,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver4_custid': {
                 'labelPos': 'left',
@@ -125,6 +128,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver5_custid': {
                 'labelPos': 'left',
@@ -146,6 +150,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver6_custid': {
                 'labelPos': 'left',
@@ -167,6 +172,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver7_custid': {
                 'labelPos': 'left',
@@ -188,6 +194,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver8_custid': {
                 'labelPos': 'left',
@@ -209,6 +216,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver9_custid': {
                 'labelPos': 'left',
@@ -230,6 +238,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver10_custid': {
                 'labelPos': 'left',
@@ -251,6 +260,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver11_custid': {
                 'labelPos': 'left',
@@ -272,6 +282,7 @@ function actionHighlight(jNode) {
                 'type': 'text',
                 'default': '',
                 'class': 'name',
+                'size': 30
             },
             'driver12_custid': {
                 'labelPos': 'left',
