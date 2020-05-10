@@ -36,7 +36,7 @@ function actionHighlight(jNode) {
                 'labelPos': 'above',
                 'label': 'Names',
                 'type': 'text',
-                'default': '',
+                'default': 'Your Name',
                 'class': 'name',
                 'size': 30
             },
@@ -44,7 +44,7 @@ function actionHighlight(jNode) {
                 'labelPos': 'above',
                 'label': 'Custids',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
@@ -52,7 +52,7 @@ function actionHighlight(jNode) {
                 'labelPos': 'above',
                 'label': 'Colors',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -66,14 +66,14 @@ function actionHighlight(jNode) {
             'driver2_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver2_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -87,14 +87,14 @@ function actionHighlight(jNode) {
             'driver3_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver3_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -108,14 +108,14 @@ function actionHighlight(jNode) {
             'driver4_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver4_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -129,14 +129,14 @@ function actionHighlight(jNode) {
             'driver5_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver5_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -150,14 +150,14 @@ function actionHighlight(jNode) {
             'driver6_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver6_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -171,14 +171,14 @@ function actionHighlight(jNode) {
             'driver7_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver7_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -192,14 +192,14 @@ function actionHighlight(jNode) {
             'driver8_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver8_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -213,14 +213,14 @@ function actionHighlight(jNode) {
             'driver9_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver9_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -234,14 +234,14 @@ function actionHighlight(jNode) {
             'driver10_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver10_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -255,14 +255,14 @@ function actionHighlight(jNode) {
             'driver11_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver11_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -276,14 +276,14 @@ function actionHighlight(jNode) {
             'driver12_custid': {
                 'labelPos': 'left',
                 'type': 'int',
-                'default': 11111,
+                'default': '',
                 'class': 'custid',
                 'size': 12
             },
             'driver12_color': {
                 'labelPos': 'left',
                 'type': 'text',
-                'default': '#FFF3B3',
+                'default': '',
                 'class': 'color',
                 'size': 8
             },
@@ -328,16 +328,12 @@ function actionHighlight(jNode) {
     var custid = location.search.split('custid=').splice(1).join('').split('&')[0];
 
     if (custid) {
-        // console.log(custid);
+        var drivers = [
+            ["", custid, "#FFF3B3"],
+        ];
     } else {
-        custid = 1;
+        var drivers = [];
     }
-
-    // you can configure the array below to make the script highlight other drivers too
-    // edit the examples below in the format: ["name", "custid", "html_color_code"]
-    var drivers = [
-        ["", custid, "#FFF3B3"],
-    ];
 
     for (i=1; i<11; i++) {
         drivers.push([stored_drivers["driver" + i + "_name"], stored_drivers["driver" + i + "_custid"].toString(), stored_drivers["driver" + i + "_color"]]);

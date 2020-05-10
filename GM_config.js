@@ -516,7 +516,7 @@ function GM_configDefaultValue(type, options) {
       break;
     case 'int': case 'integer':
     case 'float': case 'number':
-      value = 0;
+      value = null;
       break;
     default:
       value = '';
