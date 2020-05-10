@@ -3,7 +3,7 @@ Highlights the rows of your, and optionally other selected drivers, in the iRaci
 
 ![image](https://user-images.githubusercontent.com/658935/81510540-be27bd00-9355-11ea-8cdc-20ae921388d7.png)
 
-To configure which drivers are highlighted, and the colors used for each, click on the TamperMonkey icon in your browser and click on the "Set drivers to highlight" option. 
+To configure which drivers are highlighted, and the colors used for each, browse to a [results page](https://members.iracing.com/membersite/member/EventResult.do?&subsessionid=32324684) then click on the TamperMonkey icon in your browser and click on the "Set drivers to highlight" option. 
 
 ![](https://user-images.githubusercontent.com/658935/80257831-22475180-86c5-11ea-94be-57835d9e6bb5.png)
 
