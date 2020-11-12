@@ -3,7 +3,7 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your, and optionally other selected drivers, in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       2.20.05.11.02
+// @version       2.20.11.12.01
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
@@ -365,23 +365,25 @@ function actionHighlight(jNode) {
         }
         // check if the id of the row contains against the custids our drivers
         for (var l = 0; l < drivers.length; ++l) {
-            if (elmRow.id.indexOf(drivers[l][1]) !== -1) {
-                // set the color
-                elmRow.style.background = drivers[l][2];
-                for (var j = 0; j < elmRow.cells.length; j++) {
-                    elmRow.cells[j].style.color = getContrast(drivers[l][2]);
-                    var link = elmRow.cells[j].getElementsByClassName("stats_table_link");
-                    if (link.length > 0) {
-                        link[0].style.color = getContrast(drivers[l][2]);
+            if (drivers[l][1] != 0) {
+                if (elmRow.id.indexOf(drivers[l][1]) !== -1) {
+                    // set the color
+                    elmRow.style.background = drivers[l][2];
+                    for (var j = 0; j < elmRow.cells.length; j++) {
+                        elmRow.cells[j].style.color = getContrast(drivers[l][2]);
+                        var link = elmRow.cells[j].getElementsByClassName("stats_table_link");
+                        if (link.length > 0) {
+                            link[0].style.color = getContrast(drivers[l][2]);
+                        }
                     }
-                }
 
-                // if this was a team race....
-                if (teamRace == true) {
-                    // also highlight the last team row we saw
-                    prevTeam.style.background = drivers[l][2];
-                    for (var k = 0; k < prevTeam.cells.length; k++) {
-                        prevTeam.cells[k].style.color = getContrast(drivers[l][2]);
+                    // if this was a team race....
+                    if (teamRace == true) {
+                        // also highlight the last team row we saw
+                        prevTeam.style.background = drivers[l][2];
+                        for (var k = 0; k < prevTeam.cells.length; k++) {
+                            prevTeam.cells[k].style.color = getContrast(drivers[l][2]);
+                        }
                     }
                 }
             }
