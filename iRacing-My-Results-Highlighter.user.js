@@ -3,13 +3,13 @@
 // @name          iRacing My Results Highlighter
 // @description   Highlights the rows of your, and optionally other selected drivers, in the iRacing event results table
 // @include       *://members.iracing.com/membersite/member/EventResult.do*
-// @version       2.20.11.12.01
+// @version       2.20.11.12.02
 // @author        fuzzwah
 // @copyright     2018+, fuzzwah (https://github.com/fuzzwah)
 // @license       MIT; https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/LICENSE
 // @homepageURL   http://www.fuzzwahracing.com/p/results-highlighter.html
 // @updateURL     https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/iRacing-My-Results-Highlighter.user.js
-// @require       http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @require       http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 // @require       https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/GM_config.js
 // @require       https://raw.githubusercontent.com/fuzzwah/iRacing-My-Results-Highlighter/master/waitForKeyElements.js
 // @grant         GM_getValue
